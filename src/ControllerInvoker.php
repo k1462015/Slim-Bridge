@@ -33,7 +33,7 @@ class ControllerInvoker implements InvocationStrategyInterface
         callable $callable,
         ServerRequestInterface $request,
         ResponseInterface $response,
-        array $routeArguments
+        array $routeArguments = []
     ) {
         // Inject the request and response by parameter name
         $parameters = [
